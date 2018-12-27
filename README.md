@@ -44,3 +44,16 @@ https://httpstatuses.com
 https://github.com/mailhog/MailHog
 
 SMTP testing
+
+## Bandwidth
+
+https://dev.bandwidth.com
+
+Send SMS
+
+## Alpha Vantage
+
+https://www.alphavantage.co
+
+Stock quotes API
+
