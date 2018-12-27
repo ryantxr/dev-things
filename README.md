@@ -1,6 +1,12 @@
 # dev-things
 Links to dev things of interest
 
+## PHP Helper Functions
+
+https://github.com/ryantxr/php-helper
+
+Some utility functions for PHP.
+
 ## Admin LTE
 
 https://adminlte.io Admin theme with lots of features
