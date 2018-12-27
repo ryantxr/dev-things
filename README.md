@@ -34,3 +34,13 @@ https://www.php-fig.org
 ## ION Icons
 
 https://ionicons.com/
+
+## HTTP Statuses
+
+https://httpstatuses.com
+
+## MailHog
+
+https://github.com/mailhog/MailHog
+
+SMTP testing
