@@ -45,6 +45,11 @@ https://ionicons.com/
 
 https://httpstatuses.com
 
+## Laravel API Auth
+https://github.com/erjanmx/laravel-api-auth
+
+Dead simple auth for APIs.
+
 ## MailHog
 
 https://github.com/mailhog/MailHog
