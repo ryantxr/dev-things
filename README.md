@@ -50,6 +50,11 @@ https://github.com/erjanmx/laravel-api-auth
 
 Dead simple auth for APIs.
 
+## Phone Number Handling
+https://github.com/giggsey/libphonenumber-for-php
+
+A PHP library for parsing, formatting, storing and validating international phone numbers. This library is based on Google's libphonenumber.
+
 ## MailHog
 
 https://github.com/mailhog/MailHog
