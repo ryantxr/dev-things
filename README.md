@@ -1,6 +1,20 @@
 # dev-things
 Links to dev things of interest
 
+## GIT pub/priv keys
+
+Tell GIT which keys to use.
+
+```
+export GIT_SSH_COMMAND="ssh -i ~/.ssh/KEY_FILE_GOES_HERE -F /dev/null" git clone REPO
+```
+After the clone has happened, you can set the command in git config
+
+In .git/config, add the following to the \[core\] section:
+```
+   sshCommand = ssh -i ~/.ssh/KEY_FILE_GOES_HERE -F /dev/null
+```
+
 ## PHP Helper Functions
 
 https://github.com/ryantxr/php-helper
