@@ -27,6 +27,9 @@ https://adminlte.io Admin theme with lots of features
 
 https://github.com/jeroennoten/Laravel-AdminLTE Laravel installable
 
+## TailwindCSS StarterKit
+https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation open source components for TailwindCss
+
 ## Laravel Eloquent Join
 
 Adds join capabilities to Eloquent models.
