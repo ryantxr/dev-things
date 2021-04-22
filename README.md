@@ -1,6 +1,46 @@
 # dev-things
 Links to dev things of interest
 
+## TailwindCSS installation
+This installation process is for installing TailwindCSS standalone with zero
+integration with any framework.
+Tailwind is built in its own folder and it producess a css file which can be copied
+to whatever site folder.
+
+1. Make a folder for TailwindCSS.
+2. Use NPM to install tailwindcss, postcss and autoprefixer.
+3. Create tailwind configuration file.
+4. Create a base tailwind.css file which will be used to generate the real css file.
+5. Create a build script to run the build process
+6. Add Tailwind as a PostCSS plugin.
+
+
+```bash
+# (step 1)
+mkdir tailwindcss && cd tailwindcss && mkdir -p css
+# (step 2)
+npm install -D tailwindcss@latest postcss@latest postcss-cli@latest autoprefixer@latest
+# (step 3)
+npx tailwindcss init
+# (step 4)
+echo "@tailwind base;" > tailwind.css
+echo "@tailwind components;" >> tailwind.css
+echo "@tailwind utilities;" >> tailwind.css
+# (step 5)
+echo "echo building tailwind.css" > build
+echo "echo ./node_modules/postcss-cli/bin/postcss tailwind.css -o css/tailwind.css" >> build
+echo "./node_modules/postcss-cli/bin/postcss tailwind.css -o css/tailwind.css" >> build
+chmod +x build
+# (step 6)
+echo "module.exports = {" > postcss.config.js
+echo "  plugins: {" >> postcss.config.js
+echo "    tailwindcss: {}," >> postcss.config.js
+echo "    autoprefixer: {}," >> postcss.config.js
+echo "  }" >> postcss.config.js
+echo "}" >> postcss.config.js
+```
+
+
 ## GIT pub/priv keys
 
 Tell GIT which keys to use.
