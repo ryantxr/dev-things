@@ -1,7 +1,12 @@
 # dev-things
+
 Links to dev things of interest
 
+* [PHP extensions](php-extensions.md)
+* [GIT Private Keys](#git-pubpriv-keys)
+
 ## TailwindCSS installation
+
 This installation process is for installing TailwindCSS standalone with zero
 integration with any framework.
 Tailwind is built in its own folder and it producess a css file which can be copied
@@ -13,7 +18,6 @@ to whatever site folder.
 4. Create a base tailwind.css file which will be used to generate the real css file.
 5. Create a build script to run the build process
 6. Add Tailwind as a PostCSS plugin.
-
 
 ```bash
 # (step 1)
@@ -40,18 +44,19 @@ echo "  }" >> postcss.config.js
 echo "}" >> postcss.config.js
 ```
 
-
 ## GIT pub/priv keys
 
 Tell GIT which keys to use.
 
-```
+```bash
 export GIT_SSH_COMMAND="ssh -i ~/.ssh/KEY_FILE_GOES_HERE -F /dev/null" git clone REPO
 ```
+
 After the clone has happened, you can set the command in git config
 
 In .git/config, add the following to the \[core\] section:
-```
+
+```bash
    sshCommand = ssh -i ~/.ssh/KEY_FILE_GOES_HERE -F /dev/null
 ```
 
@@ -61,13 +66,14 @@ https://github.com/ryantxr/php-helper
 
 Some utility functions for PHP.
 
-## Admin LTE
+## Admin LTEx
 
-https://adminlte.io Admin theme with lots of features
+[https://adminlte.io](https://adminlte.io) Admin theme with lots of features
 
 https://github.com/jeroennoten/Laravel-AdminLTE Laravel installable
 
 ## TailwindCSS StarterKit
+
 https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation open source components for TailwindCss
 
 ## Laravel Eloquent Join
