@@ -4,6 +4,7 @@ Links to dev things of interest
 
 * [PHP extensions](php-extensions.md)
 * [GIT Private Keys](#git-pubpriv-keys)
+* [Apache/PHP-FPM](apache-setup.md)
 
 ## TailwindCSS installation
 
