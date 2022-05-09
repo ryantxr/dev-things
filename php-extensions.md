@@ -4,7 +4,18 @@ These are extensions that are not part of the base PHP installation.
 
     apt-get install --yes php8.0-bcmath php8.0-curl php8.0-dom php8.0-gd php8.0-iconv php8.0-mbstring php8.0-mysql php8.0-redis php8.0-xml php8.0-zip
 
-Install all PHP 8.0
+## Install all PHP 8.1
+
+    apt update
+    apt-get install --yes php8.1 php8.1-fpm
+    # Install non-standard packages
+    apt-get install --yes php8.1-bcmath php8.1-curl php8.1-dom php8.1-gd \
+        php8.1-iconv php8.1-mbstring \
+        php8.1-mysql php8.1-redis php8.1-xml php8.1-zip
+
+    apt-get install --yes php8.0-bcmath php8.0-curl php8.0-dom php8.0-gd php8.0-iconv php8.0-mbstring php8.0-mysql php8.0-redis php8.0-xml php8.0-zip
+
+## Install all PHP 8.0
 
     apt update
     apt-get install --yes php8.0 php8.0-fpm
