@@ -77,6 +77,10 @@ https://github.com/jeroennoten/Laravel-AdminLTE Laravel installable
 
 https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation open source components for TailwindCss
 
+## Laravel & PHP Converter
+
+https://laravelshift.com/
+
 ## Laravel Eloquent Join
 
 Adds join capabilities to Eloquent models.
