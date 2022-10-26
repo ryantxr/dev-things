@@ -103,7 +103,7 @@
     <rule ref="Squiz.Functions.FunctionDeclaration" />
     <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing" />
     <rule ref="Squiz.Functions.LowercaseFunctionKeywords" />
-    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration" />
+    <!-- <rule ref="Squiz.Functions.MultiLineFunctionDeclaration" /> -->
     <rule ref="Squiz.Scope.MethodScope" />
 
     <rule ref="Squiz.WhiteSpace.ScopeClosingBrace" />
