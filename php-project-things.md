@@ -17,10 +17,15 @@ The coding style it enforces is specific to 3iT/RMT
 Infection is a mutator tool that attempts to determine the quality of unit tests.
 It works by injecting errors into the code to see if a unit test will detect the error.
 
+## Where do I put these files?
+
+Put files in the same folder/directory where composer.json lives.
+
 ## Composer json file
 
 Assuming that source code is located in "src" add this to composer.json
 
+```json
     "scripts": {
         "phpcs": "phpcs src",
         "phpcbf": "phpcbf",
@@ -33,8 +38,12 @@ Assuming that source code is located in "src" add this to composer.json
             "@phpcs", "@phpstan", "@phpunit", "@infection", "@coverage"
         ]
     },
-    
+```
+
 ## infection.json
+
+Create a file named `infection.json` and put this content into it.
+
 ```json
 {
     "timeout": 1,
@@ -57,6 +66,12 @@ Assuming that source code is located in "src" add this to composer.json
     }
 }
 ```
+
+## .gitignore
+
+Add the following to `.gitignore`.
+
+    .phpunit.result.cache
 
 ## Finally
 
