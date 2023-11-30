@@ -2,6 +2,23 @@
 
 These are extensions that are not part of the base PHP installation.
 
+## Install PHP 8.2
+
+### Extensions Only
+
+    apt-get install --yes php8.2-bcmath php8.2-curl php8.2-dom php8.2-gd php8.2-iconv php8.2-mbstring php8.2-mysql php8.2-redis php8.2-xml php8.2-zip
+
+### Complete Install
+
+    apt update
+    apt-get install --yes php8.2 php8.2-fpm
+    # Install non-standard packages
+    apt-get install --yes php8.2-bcmath php8.2-curl php8.2-dom php8.2-gd \
+        php8.2-iconv php8.2-mbstring \
+        php8.2-mysql php8.2-redis php8.2-xml php8.2-zip
+
+    apt-get install --yes php8.2-bcmath php8.2-curl php8.2-dom php8.2-gd php8.2-iconv php8.2-mbstring php8.2-mysql php8.2-redis php8.2-xml php8.2-zip
+
 ## Install PHP 8.1
 
 ### Extensions Only
