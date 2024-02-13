@@ -24,14 +24,14 @@ The solution is to check for it and if it is enabled, turn it off.
     
             // Temporarily disable sql_require_primary_key if it's enabled
             if ($isRequirePrimaryKeyEnabled) {
-                DB::statement("SET GLOBAL sql_require_primary_key=OFF");
+                DB::statement("SET sql_require_primary_key=OFF");
             }
     
             // Your migration logic here
     
             // Re-enable sql_require_primary_key if it was initially enabled
             if ($isRequirePrimaryKeyEnabled) {
-                DB::statement("SET GLOBAL sql_require_primary_key=ON");
+                DB::statement("SET sql_require_primary_key=ON");
             }
         }
     
