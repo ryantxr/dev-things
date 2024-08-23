@@ -61,6 +61,12 @@ In .git/config, add the following to the \[core\] section:
    sshCommand = ssh -i ~/.ssh/KEY_FILE_GOES_HERE -F /dev/null
 ```
 
+How to tell SSH/GIT to use a specific key and only that key.
+
+```bash
+    ssh -i ~/.ssh/my_specific_key -o IdentitiesOnly=yes -o PreferredAuthentications=publickey user@remote_server
+```
+
 ## PHP Helper Functions
 
 https://github.com/ryantxr/php-helper
